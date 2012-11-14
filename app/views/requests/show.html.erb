@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @request.subject %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @request.location %>
+</p>
+
+<p>
+  <b>Skills:</b>
+  <%= @request.skills %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @request.summary %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @request.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @request.end_date %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @request.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
